@@ -67,7 +67,6 @@ function getNumbers(year, age) {
         if(counter %2===0){
             console.log(counter);
         }
-        
     }
     }
     getPairNumbers(2,12)
