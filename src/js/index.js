@@ -100,3 +100,35 @@ const isPrime = (number) => {
 };
 
 isPrime(10);
+
+//Crea una función que reciba un array de 10 números, imprime por consola cada número, su cuadrado y su cubo en este formato:
+//"Número: 2 - Cuadrado: 4 - Cubo: 8".
+//Nota: Dentro del objeto Math existe el método pow. Math.pow(número, exponente)
+
+const numberSquareCube = (numbers) => {
+  for (let counter = 0; counter < 10; counter++) {
+    const numberCube = Math.pow(numbers[counter], 3);
+    const numberSquare = Math.pow(numbers[counter], 2);
+
+    console.log(
+      `Número: ${numbers[counter]} - Cuadrado: ${numberSquare} - Cubo: ${numberCube}`
+    );
+  }
+};
+numberSquareCube([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+
+//Crea una función que reciba una palabra e imprima por consola esa palabra pero con las vocales en mayúscula.
+
+const upperCase = (word) => {
+  const word = "palabra";
+  let wordUpper = "";
+
+  for (const letter of word) {
+    wordUpper = wordUpper + letter.toUpperCase();
+    console.log(wordUpper);
+
+    if (["a", "e", "i", "o", "u"].includes(letter)) {
+    }
+  }
+};
+upperCase();
