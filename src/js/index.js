@@ -120,17 +120,20 @@ numberSquareCube([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
 //Crea una función que reciba una palabra e imprima por consola esa palabra pero con las vocales en mayúscula.
 
 const upperCase = (word) => {
-  const word = "palabra";
   let wordUpper = "";
 
   for (const letter of word) {
-    wordUpper = wordUpper + letter.toUpperCase();
-    console.log(wordUpper);
+    // console.log(wordUpper);
 
     if (["a", "e", "i", "o", "u"].includes(letter)) {
+      wordUpper = wordUpper + letter.toUpperCase();
+    }
+    else{
+      wordUpper = wordUpper +letter;
     }
   }
+  console.log(wordUpper);
 };
-upperCase();
+upperCase("dejame tranquila");
 
 
